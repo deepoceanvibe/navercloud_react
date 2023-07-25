@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const YourComponent = (props) => {       // 부모쪽에서 전달받을 요소가 있다면, 괄호 안에 객체를 선언한다.
-   const [country, setCountry] = useState(props.country);
+   const [country, setCountry] = useState('ROK');
 
    const onClickEvent = () => {
         setCountry("KOREA");
