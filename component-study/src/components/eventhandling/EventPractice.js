@@ -12,9 +12,12 @@ const EventPractice = () => {
         setMessage('')
     }
 
-    const handleChange = (e) => {
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value)
+    }
+
+    const handleUsernameChange = (e) => {
         setUsername(e.target.name);
-        setMessage(e.target.value);
     }
 
 
@@ -26,14 +29,14 @@ const EventPractice = () => {
                 name='username'
                 placeholder='유저명'
                 value={username}
-                onChange={handleChange}
+                onChange={handleUsernameChange}
             />
             <input 
                 type="text"
                 name="message"
                 placeholder='아무거나 입력하세요'
                 value={message}
-                onChange={handleChange}/>
+                onChange={handleMessageChange}/>
 
 
                 <button onClick={handleClick}>확인</button>
