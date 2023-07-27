@@ -5,6 +5,7 @@ import Say from './components/study/Say';
 import EventPractice from './components/eventhandling/EventPractice';
 import IterationSample2 from './components/iteration/IterationSample2';
 import Counter from './components/hooks/Counter';
+import Average from './components/hooks/Average';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
    <YourComponent country="ROK" /> */}
     {/* <EventPractice/> */}
     {/* <IterationSample2/> */}
-    <Counter />
+    {/* <Counter /> */}
+    {/* <Info /> */}
+    <Average />
   </>
   );
 }
